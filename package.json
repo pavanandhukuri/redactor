@@ -8,7 +8,7 @@
         "test:coverage": "jest --coverage"
     },
     "author": "Pavan Andhukuri",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@types/jest": "^26.0.24",
         "jest": "^27.0.6",
