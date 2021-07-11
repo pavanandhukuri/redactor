@@ -19,7 +19,7 @@ npm install @pavanandhukuri/redactor
 Data is redacted based on two key configuration parameters: key names and regex matches in data. Both can be configured like this
 
 ```javascript
-const initialize = require('@pavanandhukuri/redactor').initialize;
+const {initialize} = require('@pavanandhukuri/redactor');
 
 initialize({
     mask: '*',
@@ -35,7 +35,7 @@ initialize({
 Once setup, data can be redacted using the default exported function
 
 ```javascript
-const redactor = require('@pavanandhukuri/redactor').default;
+const redactor = require('@pavanandhukuri/redactor');
 
 let data = {'creditCardNumber': '2222-3333-2222-4444', phoneNumber: '123011222'}
 data = redactor(data);

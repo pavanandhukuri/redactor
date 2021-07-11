@@ -69,7 +69,7 @@ describe('Redactor tests', () => {
         return mockArrayRedactor;
     });
 
-    const redactor = require('..').default;
+    const redactor = require('..');
     afterEach(() => {
         jest.clearAllMocks();
     });
