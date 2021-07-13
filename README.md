@@ -26,10 +26,19 @@ initialize({
     mask: '*',
     keyPatterns: ['creditCard.*', '.*phone.*'],
     textPatterns: ['\\d{4}-\\d{4}-\\d{4}-\\d{4}'],
+    preserveDataLength: true
 })
 ```
+Following is a description of the configuration properties
 
-`mask` defaults to `'*'` if not passed.
+| Property | Description | Optional | Default Value | 
+| --- | --- | --- | --- |
+| mask | Character to be replaced with | Yes | *
+| keyPatterns | Keys of JSON objects are matched with these patterns to determine whether they should be maksed or not | No | []
+| textPatterns | Values of keys in a json object are matched with these patterns to determine whether they should be maksed or not. This is applicable to all values regardless of whether those keys are matched or not. text patterns are also applied when the input is a string | No | []
+| preserveDataLength | Determines whether the mask length should be same as the original value length. For e.g, ```abc@gmail.com``` masks to ```*************``` if this is set to true and just ```*``` if it is set to false | Yes | true
+
+
 
 # Usage
 

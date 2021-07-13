@@ -2,6 +2,7 @@ let config = {
     mask: '*',
     textPatterns: [],
     keyPatterns: [],
+    preserveDataLength: true,
 };
 
 exports.setConfig = (updatedConfig) => {

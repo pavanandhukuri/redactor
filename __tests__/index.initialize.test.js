@@ -8,6 +8,7 @@ describe('Initialize Tests', () => {
             mask: '*',
             textPatterns: [],
             keyPatterns: [],
+            preserveDataLength: true,
         });
     });
 
@@ -17,6 +18,7 @@ describe('Initialize Tests', () => {
             mask: '#',
             textPatterns: [],
             keyPatterns: [],
+            preserveDataLength: true,
         });
 
         initialize({ mask: '#', textPatterns: ['333'] });
@@ -24,6 +26,7 @@ describe('Initialize Tests', () => {
             mask: '#',
             textPatterns: ['333'],
             keyPatterns: [],
+            preserveDataLength: true,
         });
     });
 });

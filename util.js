@@ -1,14 +1,15 @@
 const { getConfig } = require('./config');
 function getRedactMask(value) {
     const config = getConfig();
+
     switch (typeof value) {
         case 'string':
-            return ''.padEnd(value.length, config.mask);
+            return config.preserveDataLength ? ''.padEnd(value.length, config.mask) : config.mask;
         case 'number':
         case 'bigint':
-            return ''.padEnd((value + '').length, config.mask);
+            return config.preserveDataLength ? ''.padEnd((value + '').length, config.mask) : config.mask;
         case 'boolean':
-            return ''.padEnd(value ? 4 : 5, config.mask);
+            return config.preserveDataLength ? ''.padEnd(value ? 4 : 5, config.mask) : config.mask;
         default:
             return config.mask;
     }
