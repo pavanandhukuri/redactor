@@ -1,6 +1,7 @@
 # redactor
 A configurable NodeJs redacting tool to mask sensitive information
 
+
 # Installation
 
 Using yarn 
@@ -45,6 +46,8 @@ console.log(data);
 ```javascript
 { creditCardNumber: '*******************', phoneNumber: '*********' }
 ```
+
+**Warning:** This library does not return a deep clone or copy of the object. Though it returns a value, in case of objects and array, the original JSON object is updated with masks.
 
 # License
 MIT
