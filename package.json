@@ -1,6 +1,6 @@
 {
     "name": "@pavanandhukuri/redactor",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Node module to automatically try and redact sensitive information in data",
     "main": "index.js",
     "scripts": {
@@ -8,6 +8,12 @@
         "test:coverage": "jest --coverage"
     },
     "author": "Pavan Andhukuri",
+    "repository": {
+        "url": "https://github.com/pavanandhukuri/redactor"
+    },
+    "bugs": {
+        "url": "https://github.com/pavanandhukuri/redactor/issues"
+    },
     "license": "MIT",
     "devDependencies": {
         "@types/jest": "^26.0.24",
