@@ -2,8 +2,9 @@ export default function redactor(input: any): any;
 
 export type Config = {
     mask?: string;
-    textPatterns: string[],
     keyPatterns: string[],
+    textPatterns?: string[],
+    envVariableNames?: string[],
     preserveDataLength?: boolean,
 };
 

@@ -8,6 +8,7 @@ describe('Initialize Tests', () => {
             mask: '*',
             textPatterns: [],
             keyPatterns: [],
+            envVariableNames: [],
             preserveDataLength: true,
         });
     });
@@ -18,6 +19,7 @@ describe('Initialize Tests', () => {
             mask: '#',
             textPatterns: [],
             keyPatterns: [],
+            envVariableNames: [],
             preserveDataLength: true,
         });
 
@@ -26,6 +28,7 @@ describe('Initialize Tests', () => {
             mask: '#',
             textPatterns: ['333'],
             keyPatterns: [],
+            envVariableNames: [],
             preserveDataLength: true,
         });
     });

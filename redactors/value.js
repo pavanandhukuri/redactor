@@ -16,6 +16,13 @@ const valueRedactor = (value) => {
         getConfig().textPatterns.forEach((pattern) => {
             value = matchAndRedact(value, pattern);
         });
+
+        if (process && process.env) {
+            getConfig().envVariableNames.forEach((varName) => {
+                const varValue = process.env[varName];
+                value = value.replace(varValue, getRedactMask(varValue));
+            });
+        }
     }
 
     return value;
