@@ -3,7 +3,10 @@
 
 name: Node.js Package
 
-on: [release, pull_request]
+on:
+  release:
+    types: [created]
+  pull_request:
   
 jobs:
   build:
