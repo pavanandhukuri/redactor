@@ -2,6 +2,7 @@ let config = {
     mask: '*',
     textPatterns: [],
     keyPatterns: [],
+    envVariableNames: [],
     preserveDataLength: true,
 };
 
